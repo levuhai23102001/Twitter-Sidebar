@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap");
+
+.sideBar {
+  width: 260px;
+  min-width: 260px;
+  padding: 15px 15px;
+  margin: 15px 0 auto;
+  box-shadow: 0 0 6px hsl(210 14% 90%);
+  font-family: "Baloo Bhaijaan 2", cursive;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 40px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  cursor: pointer;
+  padding-left: 15px;
+}
+#tweet {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: hsl(203, 89%, 64%);
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+  text-transform: inherit;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 18px;
+}
+
+#moreLinks {
+  width: 100%;
+  justify-content: start;
+  border-radius: 30px;
+}
+
+#moreLinks:hover {
+  background-color: #e8f5fe;
+  transition: color 100ms ease-out;
+}
+
+#moreLinks > .MuiButton-label > .MuiSvgIcon-root {
+  padding: 10px 15px 10px;
+  font-size: 30px;
+}
+
+#moreLinks > span {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+#long-menu .MuiMenu-paper {
+  width: 250px;
+  max-height: 100vh;
+  left: 45% !important;
+  top: unset !important;
+}
+#long-menu .MuiListItem-root {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.MuiListItem-root:nth-child(6) {
+  border-bottom: 1px solid hsl(210, 12%, 95%);
+}
+.MuiListItem-root .MuiSvgIcon-root {
+  font-size: 20px;
+  color: hsl(210, 12%, 20%);
+  font-weight: 400;
+  margin-right: 10px;
+}
