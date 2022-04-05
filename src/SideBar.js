@@ -43,7 +43,7 @@ function SideBar() {
 
   const [openMenu, setOpenMenu] = useState(false);
 
-  const handleOpenMenu = (event) => {
+  const handleOpenMenu = () => {
     setOpenMenu(true);
   };
   const handleCloseMenu = () => {
@@ -58,18 +58,18 @@ function SideBar() {
       <SideBarLink text="Explore" Icon={SearchIcon} />
       <SideBarLink text="Notifications" Icon={NotificationsNoneIcon} />
       <SideBarLink text="Messages" Icon={MailOutlineIcon} />
-      <SideBarLink text="Bookmark" Icon={BookmarkBorderIcon} />
+      <SideBarLink text="Bookmarks" Icon={BookmarkBorderIcon} />
       <SideBarLink text="Lists" Icon={ListAltIcon} />
       <SideBarLink text="Profile" Icon={PermIdentityIcon} />
-      <Button onClick={handleOpenMenu} id="moreLinks">
+      <Button id="moreLinks" onClick={handleOpenMenu}>
         <MoreHorizIcon /> <span>More</span>
       </Button>
       <Button id="tweet">Tweet</Button>
 
-      <Menu onClose={handleCloseMenu} open={openMenu} id="long-menu">
-        {menuItems.map((item) => (
-          <MenuItem key={item.link}>
-            {item.icon} {item.link}
+      <Menu id="long-menu" open={openMenu} onClose={handleCloseMenu}>
+        {menuItems.map((menuItem) => (
+          <MenuItem key={menuItem.link}>
+            {menuItem.icon} {menuItem.link}
           </MenuItem>
         ))}
       </Menu>
