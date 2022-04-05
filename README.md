@@ -4,4 +4,4 @@
 - Happy Coding 🥰
 - Make luv not war 💖💛🧡💚💙💜
 
-![Alt text](/twitter-sidebar/public/twitter-sidebar.jpg)
+![ScreenShot](/twitter-sidebar/public/twitter-sidebar.jpg)
